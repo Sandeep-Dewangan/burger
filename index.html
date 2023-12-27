@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .socalmedia a{
+                 color: white;
+                 margin: 0 1rem;
+            }
+            .anime{
+                overflow: hidden;
+            }
+
+            .logo{
+                /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+                animation: logo 1.5s  ease-in-out ;
+            }
+            @keyframes logo {
+                from{
+                    transform: translate(-100%);
+                }
+                to{
+                    transform: translate(0);
+                }   
+            }
+            .display .display_box1 p{
+                animation: headtop .5s 1.3s linear ;
+            }
+            @keyframes headtop {
+                from{
+                    transform: translateY(-100%);
+                }
+                to{
+                    transform: translateY(0);
+                }   
+            }
+
+            .display .display_box1 h1{
+                animation: head1 2s 2s ease;
+            }
+            .display .display_box1 h2{
+                animation: head2 2s 2s ease;
+}
+            @keyframes head1 {
+                from{
+                    transform: translate(-100%);
+                }
+                to{
+                    transform: translate(0);
+                }   
+            }
+            @keyframes head2 {
+                from{
+                    transform: translate(100%);
+                }
+            }
+
+
+          header .manu_icon{
+            animation: iconpop 1s  linear ;
+          }
+           @keyframes iconpop {
+            0%{ transform: translateY(-20px); }
+            10%{ transform: translateY(-0px); }
+            20%{ transform: translateY(-15px);  }
+            40%{ transform: translateY(0px); }
+            50%{ transform: translateY(-10px); }
+            60%{ transform: translateY(0px); }
+            70%{ transform: translateY(-8px); }
+            80%{ transform: translateY(0px); }
+            85%{ transform: translateY(-6px); }
+            90%{ transform: translateY(0px); }
+            95%{ transform: translateY(-4px); }
+            100%{ transform: translateY(0px); }
+           } 
+           
+           .loader{
+            width: 100%;
+            height: 100vh;
+            background-color: #222222;
+            position: fixed;
+            z-index: 9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s linear;
+           }
+           .loader img{
+            width: 50%;
+           }
+           @media (max-width:900px){
+            .loader img{
+            width: 60%;
+           }
+           }
+           @media (max-width:750px){
+            .loader img{
+            width: 80%;
+           }
+           }@media (max-width:500px){
+            .loader img{
+            width: 100%;
+           }
+           }
+        @media (max-width:360px){
+            .loader img{
+            width: 130%
+           }
+        }
+
+
+        .display_box2{
+           animation: zoom .4s  1s linear ;
+           transform: scale(1);
+           transition: .4s;
+            
+        }@keyframes zoom {
+            from{
+                transform: scale(0);
+            }
+        }
+
+
+
+
+        </style>
+</head>
+
+<body>
+    <div class="loader">
+        <img src="loading-92.gif" alt="">
+    </div>
+
+    <script>
+        let loaderab = document.querySelector(".loader");
+
+        window.addEventListener("load", function(){
+            loader.style.display ="none";
+        })
+    </script>
+
+
+    <div class="container">
+        <div class="loading_page">
+            <header>
+                <a href="" class="logo"><img src="image/Logo.png" alt=""></a>
+                <i id="manu" class="fa-solid fa-bars-staggered manu_icon"></i>
+                <div class="manu">
+                    <a href="">HOME</a>
+                    <a href="">MANU</a>
+                    <a href="">SERVICE</a>
+                    <a href="">OUR STORY</a>
+                    <a href="">ABOUT</a>
+                    <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </header>
+            <div class="display">
+                <div class="display_box1">
+
+                    <div class="anime"><p>It is a good time for the great taste of burger</p></div>
+                    <div class="anime"><h1>burger</h1></div>
+                    <div class="anime"><h2>week</h2></div>
+
+                </div>
+                <div class="display_box2">
+                    <img src="image/banner1.png" alt="">
+                    <div class="price">
+                        <p>$5.<span>49</span><br>
+                            only</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="page1">
+            <div class="page1_box1">
+                <img src="image/Burger -bg.png" alt="">
+                <p>try is today <br><span>most populer burger</span></p>
+            </div>
+            <div class="page1_box2">
+                <img src="image/Image_1.png" alt="">
+                <p>try it today <br><span>more fun <br> more taste</span></p>
+            </div>
+            <div class="page1_box3">
+                <img src="image/Image_2.png" alt="">
+                <p>try it today <br> <span> fresh & chili</span></p>
+            </div>
+        </div>
+
+        <div class="page2">
+            <h2> always tasty burger</h2>
+            <h3> choose & enjoy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium voluptates aperiam cupiditate quas
+                distinctio earum animi ipsam, culpa sint</p>
+        </div>
+
+        <div class="page3">
+            <div class="page3_box1 burger">
+                <img src="image/Burger _1.png" alt="">
+                <h3>Lorem ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, possimus.</p>
+                <button>order now</button>
+            </div>
+            <div class="page3_box2 burger">
+                <img src="image/Burger_2.png" alt="">
+                <h3>Lorem ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, possimus.</p>
+                <button>order now</button>
+            </div>
+            <div class="page3_box3 burger">
+                <img src="image/Burger _1.png" alt="">
+                <h3>Lorem ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, possimus.</p>
+                <button>order now</button>
+            </div>
+        </div>
+        <div class="page4">
+            <div class="page4_box1">
+                <div class="event">
+                    <h4>discover</h4>
+                    <h3>UPCOMING EVENT</h3>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, maxime perspiciatis
+                        laborum consequatur quod autem, iste dolorem hic assumenda explicabo magni aliquid laudantium
+                        iusto cum nisi. Quod impedit omnis est! </P>
+                </div>
+                <img src="image/Burger Image (1).png" alt="">
+                
+            </div>
+        </div>
+
+        <div class="page5">
+            <h4>reservation</h4>
+            <h3>book your tabel</h3>
+            <form action="">
+                <input type="text" placeholder="NAME" required>
+                <input type="email" placeholder="EMAIL" required>
+                <input type="date" placeholder="DATE" required>
+                <input type="time" placeholder="time" required>
+                <input type="number" placeholder="PEPOLE" required>
+                <input type="submit" value="fine your tabel">
+            </form>
+            <img class="img1" src="image/Bottle.png" alt="">
+            <img class="img2" src="image/Burger King.png" alt="">
+            <img class="img3" src="image/Imageking.png" alt="">
+            <img class="img4" src="image/Bottle.png" alt="">
+        </div>
+
+        <div class="footer">
+            <div>
+                <img src="image/footerlogo.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nemo ducimus suscipit dicta? Blanditiis
+                    iusto aperiam earum assumenda quam sint nulla commodi aliquam inventore, odit voluptatum neque eius,
+                    quasi quisquam?</p>
+            </div>
+            <div class="follow">
+                <h4><i class="fa-solid fa-location-dot"></i> mg main road, ps bulding raipur cg</h4>
+                <h4><a href=""><i class="fa-solid fa-envelope"></i> sandeep77@gmail.com </a></h4>
+
+
+                <div class="socalmedia">
+                <a href="https://www.facebook.com/profile.php?id=100025165013727" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com/07_sandy_03?igshid=MzMyNGUyNmU2YQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/sandeep-dewangan-45778026b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.link/1vgfxx" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <p class="copyright"> &#169;Company Name 2020. All rights reserved</p>
+
+    <script src="javascript.js">
+
+    </script>
+</body>
+
+</html>
